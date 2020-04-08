@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Concentration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section class = 'header-container'>
+        <h1 class = 'page-header'>Find The Avengers</h1>
+    </section>
+    <main class = 'game-page'>
+        <nav class = 'nav-container'>
+            <section class = 'nav-title-container'>
+                <p class = 'nav-title'> MATCHED CARDS</p>
+            </section>
+            <section class="match-amount-container">
+                <p class="amount-container">0</p>
+              </section>
+              <section class="current-matches-container">
+                <div class="current-match" data-id="card-1">
+                </div>
+                <div class="current-match" data-id="card-2">
+                </div>
+                <div class="current-match" data-id="card-3">
+                </div>
+                <div class="current-match" data-id="card-4">
+                </div>
+                <div class="current-match" data-id="card-5">
+                </div>
+              </section>
+              <section class = 'player-name-section'>
+              	<form>
+              	<p>Please enter your name!</p>
+              	<input type="text" name="player-name" class = 'user-name' id = 'user-name'>
+              	<button id = 'btn'>Click me!</button>
+              </form>
+              </section>
+              <section class="top-scores">
+                <h1><u id = 'score-board-underline'>Leaderboard</u></h1>
+                <h2 class="first-score"></h2>
+                <h2 class="second-score"></h2>
+                <h2 class="third-score"></h2>
+              </section>
+        </nav>
+        <section class="card-container">
+        </section>
+    </main>
+    <main class="win-page-container hide">
+        <p class="congrats">
+          Congrats!
+        </p>
+        <p class="match-quantity">
+          All 5 matches were found in
+        </p>
+        <p class="total-time">
+        </p>
+        <div class="buttons-container">
+          <button id="new-button" class="new-game-button">
+            Play Again?
+          </button>
+        </div>
+      </main>
+      <script src="game-timer.js"></script>
+      <script src="card.js"></script>
+      <script src="card-deck.js"></script>
+      <script src="app.js"></script>
+</body>
+</html>
